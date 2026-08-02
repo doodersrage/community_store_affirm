@@ -1,4 +1,7 @@
 {
-  "require": {
-  }
+  "name": "concretecms-community-store/community_store_affirm",
+  "description": "Affirm payment method for Community Store on Concrete CMS",
+  "type": "concrete5-package",
+  "license": "MIT",
+  "require": {}
 }

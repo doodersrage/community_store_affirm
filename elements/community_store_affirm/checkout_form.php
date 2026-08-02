@@ -1,5 +1,5 @@
-<?php defined('C5_EXECUTE') or die(_("Access Denied."));
+<?php defined('C5_EXECUTE') or die('Access Denied.');
 extract($vars);
 ?>
 
-<p><?= t("Click \"Complete Order\" to Proceed to the Affirm Website.")?></p>
+<p><?= t('Click "Complete Order" to proceed to Affirm checkout.') ?></p>
