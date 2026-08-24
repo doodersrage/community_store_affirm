@@ -34,7 +34,22 @@ This package uses Affirm's current **v1 Transactions API** for authorization aft
 
 The Affirm.js library is loaded site-wide when the package is installed, which enables promotional messaging on product and cart pages.
 
+## Architecture
+
+This package follows Concrete CMS 9 conventions:
+
+- **RouteList** — routes are registered through `src/Routing/RouteList.php`
+- **Controller** — checkout callbacks are handled by `AffirmCheckoutController`
+- **Services** — Affirm API and checkout payload logic live under `src/Affirm/Service/`
+- **Event listener** — Affirm.js is injected on `on_header_required_ready`
+
 ## Changelog
+
+### 2.1.0
+
+- Refactored to Concrete CMS 9 design patterns (RouteList, controllers, services, event listeners)
+- Replaced legacy global header injection with `on_header_required_ready` event subscriber
+- Moved Affirm authorization callback out of the payment method into a dedicated controller
 
 ### 2.0.0
 
